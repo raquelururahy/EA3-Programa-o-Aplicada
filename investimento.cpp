@@ -26,6 +26,7 @@ struct tInvestimento{
   cout<<"tempo...............: "<<tempo<<" meses"<<"\n";
   cout<<"juros...............: "<<juros<<" reais"<<"\n";
   cout<<"montante............: "<<montante<<" reais"<<"\n\n";
+  // teste
 
   } 
 
