@@ -1,10 +1,31 @@
 #include <iostream>
-#include <cmath>
-#include <stdio.h>
+
 #include "investimento.cpp"
 
 using namespace std;
 
+tInvestimento In(){
+  tInvestimento EDados;
+
+  cout<< "Digite o capital para investimento"<<endl;
+  cin>>EDados.capital;
+  cout<< "Digite a taxa percentual"<<endl;
+  cin>>EDados.taxa_percentual;
+  cout<< "Digite o tempo de investimento em mes"<<endl;
+  cin>>EDados.tempo;
+
+  return EDados;
+
+}
+
+tInvestimento Out(){
+  tInvestimento SDados;
+
+  cout<< "Montante ao final do período aplicado considerando juros simples"<< Simples;
+
+  return 0;
+
+}
 
 int main() {
   string nome;
@@ -14,12 +35,7 @@ int main() {
   float tempo;
   float montante;
 
-  cout<< "Digite o capital"<<endl;
-  cin>>capital;
-  cout<< "Digite a taxa percentual"<<endl;
-  cin>>taxa_percentual;
-  cout<< "Digite o tempo"<<endl;
-  cin>>tempo;
+  
 
 
   /*tInvestimento simples1;

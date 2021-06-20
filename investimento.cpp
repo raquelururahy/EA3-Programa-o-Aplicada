@@ -1,12 +1,16 @@
 #include <iostream>
+#include <cmath>
+#include <stdio.h>
+
 using namespace std;
+
 struct tInvestimento{
-  string nome;
   float capital;
   float juros;
   float taxa_percentual;
   float tempo;
   float montante;
+  float Simples;
 
   
 
@@ -18,6 +22,8 @@ struct tInvestimento{
   tempo=sttempo;
   montante=stmontante;
   }
+
+
 
   void mostra(){
   cout<<"nome................: "<<nome<<"\n\n";
@@ -33,3 +39,15 @@ struct tInvestimento{
 
 
 };
+
+int taxaAno_taxaMensal = tInvestimento.taxa_percentual / 12;
+
+tInvestimento Juros_simples(){
+  tInvestimento Simples;
+
+  float taxa = tInvestimento.capital*taxaAno_taxaMensal*tInvestimento.tempo*0.01;
+
+  Simples = taxa;
+}
+
+
